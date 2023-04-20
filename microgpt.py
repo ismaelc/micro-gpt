@@ -74,7 +74,7 @@ if __name__ == "__main__":
     thought = "I awakened moments ago."
 
     while(True):
-        context = memory.get_context(f"{objective}, {thought}")
+        context = memory.get_context(f"{objective}, {thought}", search=True)
 
         if debug:
             print(f"CONTEXT:\n{context}")
